@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>API</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"> -->
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <link rel="stylesheet" href="styele.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="api.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div>
+
+        </div>
+        <table border="1" v-for="(result) in results">
+
+            <tr>
+                <td>
+                    <p> {{ result.id }} </p>
+                </td>
+                <td>
+                    <p> {{ result.login }} </p>
+                </td>
+                <td>
+                    <p> {{ result.status }} </p>
+                </td>
+                <td>
+                    <p> {{ result.create_date }} </p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="wrapper">
+            <div class="block_1">
+                <div class="p">login: <input v-model='login' type="text"> <br></div>
+                <div class="p">password: <input v-model='password' type="text"> <br></div>
+    
+                <div class="p">status: <input v-model='status' type="text"> <br></div>
+                <div class="p">create_date: <input v-model='create_date' type="text"> <br></div>
+                <button @click="addBase">Добавить данные</button>
+            </div>
+    
+            <div>
+                <div class="p">id: <input type="text" v-model="id"></div>
+                <button>Удалить данные</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+
+    <script src="vueApp.js"></script>
+
+</body>
+
+</html>

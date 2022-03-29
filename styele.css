@@ -1,0 +1,18 @@
+td {
+    width: 150px;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+.p {
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+}
+
+.block_1 {
+    margin-right: 50px;
+}
